@@ -2,7 +2,21 @@
 @set('title', 'Bacon factory')
 
 @section('body')
-  @!component('snowdog/bacon', {
+  @!component('components/bacon', {
     img: '/images/bacon.jpg'
   })
+@end
+
+@section('cloning')
+  <script>
+    const btn = document.querySelector('.btn');
+    const cloningSection= document.querySelector('.cloning');
+    const image = document.querySelector('.bacon__img')
+
+    btn.addEventListener('click', (e)=>{
+      e.preventDefault();
+      const copy = image.cloneNode(true);
+      cloningSection.append(copy)
+    })
+  </script>
 @end
