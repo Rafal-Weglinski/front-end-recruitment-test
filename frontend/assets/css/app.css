@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
 html,
@@ -83,6 +83,14 @@ i {
 }
 
 /************************************************/
+/* Utylities */
+/************************************************/
+.u-border-bottom {
+  border-bottom: dashed 1px #e8e8e8;
+  margin-bottom: 5px;
+}
+
+/************************************************/
 /* Bacon*/
 /************************************************/
 
@@ -120,6 +128,7 @@ i {
 /************************************************/
 /* Form General */
 /************************************************/
+
 .form__container {
   background: #f2f2f2;
   margin: 30px;
@@ -253,13 +262,8 @@ i {
   width: 100%;
 }
 
-.form__flex {
-  display: flex;
-  /* justify-content: space-between; */
-}
-
-.form__flex-left {
-  width: 100%;
+.form__relative {
+  position: relative;
 }
 
 .form__image {
@@ -269,6 +273,10 @@ i {
   border: solid 1px #e9e9e9;
   padding: 4px;
   border-radius: 3px;
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .form__label {
@@ -351,9 +359,21 @@ select:-webkit-autofill:focus {
 }
 
 /************************************************/
-/* Utylities */
+/* Form validation */
 /************************************************/
-.u-border-bottom {
-  border-bottom: dashed 1px #e8e8e8;
-  margin-bottom: 5px;
+.form-error-text {
+  color: rgb(220, 20, 60);
+  font-size: 15px;
+  font-family: "Roboto";
+  display: inline-block;
+  padding: 2px;
+  font-weight: 500;
+}
+
+.field-error {
+  border: solid 2px rgba(220, 20, 60, 0.5);
+}
+
+.field-correct {
+  border: solid 2px #6bd300;
 }
