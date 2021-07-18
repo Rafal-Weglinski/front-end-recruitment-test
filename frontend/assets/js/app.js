@@ -12,7 +12,7 @@ const phoneNumber = document.getElementById("phone");
 const ccNumber = document.getElementById("ccnumber");
 const securityCode = document.getElementById("scode");
 const expirationDate = document.getElementById("edate");
-const submit = document.getElementById("submit");
+const submitBtn = document.getElementById("submitBtn");
 const form = document.getElementById("form");
 const inputsArr = [
   firstName,
@@ -24,7 +24,7 @@ const inputsArr = [
   ccNumber,
   securityCode,
   expirationDate,
-  submit,
+  submitBtn,
 ];
 
 /////////////////////////////////

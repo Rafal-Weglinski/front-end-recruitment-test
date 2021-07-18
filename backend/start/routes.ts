@@ -64,9 +64,7 @@ Route.post("/order", async ({ request, response }) => {
 
   try {
     await request.validate({ schema: orderSchema });
-    response.send({
-      message: "Order successfully placed.",
-    });
+    response.send("Order successfully placed.");
   } catch (error) {
     response.badRequest(error.messages);
   }
