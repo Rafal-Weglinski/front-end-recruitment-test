@@ -302,7 +302,7 @@
                                 Total purchases
                         </p>
                         <p>
-                                $ 960
+                                $ 960.00
                         </p>
                 </div>
                 <div class="order__products-details u-border-bottom">
@@ -330,17 +330,18 @@
        
                 <div class="form__input-container form__input-container--100 form__relative">
                         <label class="form__label" for="creditCard">Credit Card Number</label>
-                        <input class="form__input" type="text"  name="creditCard"  placeholder="0000 - 0000 - 0000 - 0000" autocomplete="cc-csc"
+                        <input class="form__input" type="text"  name="creditCard"  placeholder="0000 — 0000 — 0000 — 0000" autocomplete="cc-csc"
                         id="ccnumber" required minLength="16" maxLength="16" pattern="[0-9]*">
                 <img src="{{img}}" alt="Logo Visa" class="form__image">
         </div>
-                <div class="form__input-container ">
+                <div class="form__input-container form__relative">
                         <label class="form__label" for="CVV">Security code</label>
                         <input class="form__input" type="password" name="CVV" placeholder="***" id="scode" required  minLength="3" maxLength="3" pattern="[0-9]*">
+                        <span class="form__question-mark">?</span>
                 </div>
                 <div class="form__input-container ">
                         <label class="form__label" for="expDate">Expiration date</label>
-                        <input class="form__input" type="text"  name="expDate" placeholder="MM/YY"  id="edate"  required  minLength="5" maxLength="5" pattern="([0-9]{2}[/]?){2}">
+                        <input class="form__input" type="text"  name="expDate" placeholder="MM / YY"  id="edate"  required  minLength="5" maxLength="5" pattern="([0-9]{2}[/]?){2}">
                 </div>
                 <button id="submitBtn" class="form__submit"><i class="fas fa-shopping-cart" ></i> Complete Purchase</button>
         
